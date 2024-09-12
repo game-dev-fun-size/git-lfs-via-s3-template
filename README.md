@@ -2,7 +2,7 @@
 Template project demonstrating a method to use AWS S3 buckets as the backend for git-lfs storage
 
 ## Overview
-When using git with projects with large binary assets, e.g., Unreal Engine projects with all its `*.uasset` files, those shouldn't be handled the same way as typical code files, and you'll want to use git-lfs to manage those files. However, the git-lfs storage offered through github is limited, and expanding that storage is relatively expensive. In this project template, I'll show how you can set up a repository to use git-lfs and store your large files in an AWS S3 bucket, where storage isn't free, but _far_ less expensive than storing your lfs files on github.
+When using git with projects with large binary assets, e.g., Unreal Engine projects with all their `*.uasset` files, those shouldn't be handled the same way as typical code files, and you'll want to use git-lfs to manage those files. However, the git-lfs storage offered through github is limited, and expanding that storage is relatively expensive. In this project template, I'll show how you can set up a repository to use git-lfs and store your large files in an AWS S3 bucket, where storage isn't free, but _far_ less expensive than storing your lfs files on github.
 
 ## Project Setup
 ### S3 Bucket Setup
