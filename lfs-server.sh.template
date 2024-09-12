@@ -1,0 +1,13 @@
+# Your AWS credentials.
+export AWS_ACCESS_KEY_ID=XXXXXXXXXXXXXXXXXXXX
+export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+export AWS_DEFAULT_REGION=us-west-2
+
+cd ./local-lfs-server
+
+cargo run -- \
+  --cache-dir ./cache \
+  --port 8080 \
+  --max-cache-size 10GiB \
+  s3 \
+  --bucket YOUR-BUCKET-NAME-HERE

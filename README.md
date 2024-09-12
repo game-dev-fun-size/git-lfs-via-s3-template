@@ -42,7 +42,7 @@ When using git with projects with large binary assets, e.g., Unreal Engine proje
     3. An `.lfsconfig` file, which should be updated with your repository's organization and repo name to match the folders you made in S3.
     4. A `lfs-server.sh.template`, which is a shell script for running the gif-lfs server that's only missing AWS credentials.
     5. A `.gitignore` file for `lfs-server.sh`, which is meant to prevent you from accidentally committing the lfs-server-running shell script with your AWS credentials in it!
-2. You should update the file types in your `.gitattributes` file to reflect the needs of your project, update the `.lfsconfig` file with your project's org and repo name and create a copy of `lfs-server.sh.template` with `.template` stripped off and your AWS credentials in place.
+2. You should update the file types in your `.gitattributes` file to reflect the needs of your project, update the `.lfsconfig` file with your project's org and repo name, update `lfs-server.sh.template` to use your bucket name and create a copy of `lfs-server.sh.template` with `.template` stripped off and your AWS credentials in place.
 3. Using a terminal in your repo's root folder (I use Git Bash), run `./lfs-server.sh` to start the lfs server and ensure that it can connect to your S3 bucket.
 4. As long as the lfs server is running in the background, you can now add, commit and push files to your repository, and the files types defined in `.gitattributes` will be routed to your S3 bucket via the lfs-server.
 

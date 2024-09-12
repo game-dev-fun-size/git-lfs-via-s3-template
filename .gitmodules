@@ -1,0 +1,3 @@
+[submodule "local-lfs-server"]
+	path = local-lfs-server
+	url = https://github.com/jasonwhite/rudolfs.git
